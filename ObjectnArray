@@ -1,0 +1,44 @@
+function ArrObj(val)
+{
+if(Array.isArray(val))
+{
+console.log("Inside IF")
+var sum=0;
+for (let i=0;i<val.length;i++)
+{
+sum=sum+val[i];
+console.log(sum);
+
+}
+console.log("Sum is " + sum)
+}
+
+else
+{
+
+console.log(val[0].firstname ,val[0].lastname);
+console.log(Object.keys(val[0]));
+console.log(Object.values(val[0]));
+} 
+
+
+}
+//arr1=[10,20,30];
+
+let arr1=[
+{ firstname:'Shiva',
+	lastname:'Tolanur'
+},
+{ firstname:'Shi',
+	lastname:'Tola'
+}
+];
+//arr1="Shiva";
+
+var values=new ArrObj(arr1);
+//console.log(values.arr1.firstname);
+
+
+//var values=Object.create(ArrObj);
+
+//console.log("Outside " + values.arr1);
